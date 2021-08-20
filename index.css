@@ -2,18 +2,21 @@
     margin: 0;
     padding:0;
 }
+.head{
+    padding: 15px 0px;
+    background-color: rgb(243, 245, 111)
+}
 body{
-    background-color: #040d36; 
+    background-color: #061142; 
     color: #FFFFFF;
     margin: 0;
     font: normal 16px arial, helvetica, serif;
 }
-h1{
+h1, h2{
 text-align: center;
+text-transform: uppercase;
+color:#040d36;
 }
-h2{
-    text-align: center;
-    }
 a{
         text-decoration: none;
         color:#000080;
@@ -25,57 +28,61 @@ a:active{
         color: green;
     }
 .container {
-    width: 50%;
-    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+
 }
 .box-1{
     background-color: #2aad91;
     color: #040d36;
-    border: 2px blueviolet solid;
+    border-radius: 10px;
     padding: 0 10px;
-    margin:10px;
+    margin: 0px 30px;
     font: helvetica;
+    flex:30%;
+    order:0;
 }
 .box-1 h3{
     color: #FFFFFF;
-
+    padding:10px;
 }
 
 .img-bobi{
-    width: 300px;
-    height: 200px;
-    margin:10px;
-    background-size: 100%;
-   
-}
-.categories{
-    background-color: #2aad91;
-    color: #Fffe042;
-    border: 2px blueviolet solid;
-    margin: 10px;
-    padding: 0 20px;
+    width: 80%;
+    height: 80%;
+    margin:0px;
+    padding-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    order:1;
 }
 
-.categories p{
-    text-align: center;
-    font-size: larger;
-    font: helvetica;
+.video-box {
+    margin-left: 80px;
+    order:3;
 }
-.box-4 {
-
-    margin: 10px;
-    padding: 10px;
+.video-box p{
+    padding-bottom: 10px;
 }
-.box-5{
+.survey-box{
     background-color:#2aad91;
     color: #040d36;
-    border: 2px blueviolet solid;
-    margin: 10px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 30px;
     font: helvetica;
+    order:2;
+    margin-left: 10px;
 }
-.box-5 h3{
+.survey-box h3{
     text-align: center;
     font-size: larger;
     color: #FFFFFF;
+    padding: 0px;
 }
+.survey-box p{
+    font-size: larger;
+    color: #FFFFFF;
+    padding-top: 5px;
